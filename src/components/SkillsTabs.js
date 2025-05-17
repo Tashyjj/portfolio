@@ -4,15 +4,33 @@ const SkillsTabs = () => {
   const [activeTab, setActiveTab] = useState('Languages');
 
   const renderContent = () => {
+    const skillItem = (src, label) => (
+      <div className="skill-item">
+        <img src={src} alt={label} className="skill-icon" />
+        <span className="skillName">{label}</span>
+      </div>
+    );
     switch (activeTab) {
       case 'Languages':
-        return( 
-            <p>Python, JavaScript, SQL, HTML/CSS...</p>
+        return (
+          <div className="skills-grid">
+            {skillItem('/assets/pythonLogo.png', 'Python')}
+            {skillItem('/assets/javascriptLogo.png', 'JavaScript')}
+            {skillItem('/assets/htmlCssLogo.png', 'HTML/CSS')}
+            {skillItem('/assets/sqlLogo.png', 'SQL')}
+          </div>
         );
       case 'Frameworks':
-        return <p>React, Node.js, Express, REST API</p>;
+        return (
+          <div className="skills-grid">
+            {skillItem('/assets/reactLogo.png', 'React')}
+            {skillItem('/assets/nodejsLogo.png', 'Node.js')}
+            {skillItem('/assets/expressjsLogo.png', 'Express')}
+            {skillItem('/assets/restapiLogo.png', 'REST API')}
+          </div>
+        );
       case 'Soft Skills':
-        return <p>Problem-solving, Communication, Teamwork...</p>;
+        return <p>Problem-solving, Communication, Teamwork</p>;
       default:
         return null;
     }
