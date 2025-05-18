@@ -175,7 +175,7 @@ text-align: left;
     align-self: flex-end;
     flex-direction: row;
     width: 700px;
-    height: 300px;
+    
 }
 
 .tabs-header {
@@ -218,7 +218,7 @@ text-align: left;
 }
     
 .tab-content {
-    min-width: 500px;
+    
     padding: 0.25rem;
     border-radius: 8px;
     justify-content: center;
@@ -264,13 +264,20 @@ text-align: left;
 }
 
 .skill-icon {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
+    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .skill-item {
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: 'Arial', monospace;
@@ -279,7 +286,21 @@ text-align: left;
     padding: 0.5rem;
     background-color: rgba(100, 255, 219, 0.055);
     border-radius: 10px;
-    transition: transform 0.2s ease;
+    width: 14rem;
+    height: 12rem;
+    position: relative;
+    transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item,
+.skill-item * {
+  cursor: default;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    border: 2px solid #64ffda;
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
 }
 
 .skills-grid {
@@ -294,6 +315,40 @@ text-align: left;
 }
 
 .skillName {
+    position: absolute;
     display: flex;
-    align-items: center;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.skill-details {
+    display: none;
+    position: absolute;
+    top:10px;
+    left: 0px;
+    top: 1rem;
+    font-size: 0.8rem;
+    color: #8892b0;
+    margin-top: 0.5rem;
+    text-align: left;
+    list-style: disc;
+}
+
+.skill-item:hover span {
+    display: none;
+}
+
+.skill-item:hover .skill-icon {
+    transform: translate(0, 0) scale(0.75);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover .skill-details {
+    display: block;
+}
+
+.nodejs-icon {
+    filter: brightness(0) saturate(100%) invert(63%) sepia(14%) saturate(644%) hue-rotate(124deg) brightness(95%) contrast(92%);
 }
