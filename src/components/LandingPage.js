@@ -10,7 +10,7 @@ const LandingPage = () => {
         I have an interest in Artificial Intelligence, Machine Learning, Data Engineering, and App Development. 
         I currently work as a Data Analyst at Continual Energy Inc.
       </p>
-      <button className="learn-more-button">See my skills</button>
+      <a href="#skills" className="learn-more-button">See my skills</a>
       <div className="spacer"></div>
     </div>
   );

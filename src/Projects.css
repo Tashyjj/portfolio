@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./assets/fonts/FiraCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.projects-section {
+  margin-top: 500px;
+  color: #ccd6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  width: fit-content;
+  margin: 0 auto;
+}
+  
+.projects-title {
+  padding-left: 8vh;
+  padding-bottom: 5vh;
+  text-align: left;
+  font-size: 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.7rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  background-color: rgba(106, 255, 230, 0.05);
+  width: 30%;
+  padding: 0.7rem 1.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  height: 27vh;
+  width: 26vh;
+}
+
+.project-card:hover {
+  background-color: rgba(18, 255, 235, 0.096);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-image {
+  padding-top: 1vh;
+  height: 4vh;
+  width: 4vh;
+  margin-bottom: 4vh;
+}
+
+.github-logo {
+  padding: 0;
+  margin: 0;
+  align-items: right;
+  height: 2vh;
+  width: auto;
+  display: block;
+}
+
+.github-box {
+  margin-bottom: 3.5vh;
+  border: 1px solid #4fc9ad;
+  padding: 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3vh;
+  width: 3vh;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.github-box:hover {
+  background-color: #4fc9ad;
+  cursor: pointer;
+}
+
+.github-box:hover .github-logo {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(8%) saturate(4621%) hue-rotate(165deg) brightness(95%) contrast(97%);
+}
+
+.card-title {
+  font-size: 1rem;
+  height: 2vh;
+  text-align: center;
+  margin: 0;
+}
+
+.card-desc {
+  text-align: left;
+  font-size: 0.85rem;
+  flex-grow: 1;
+  overflow:hidden;
+  color: #ccd6f6a9;
+}
+
+.tech-used {
+  font-family: 'Fira Code', monospace;
+  text-align: right;
+  font-size: 0.7rem;
+  color: #64ffda;
+  margin-top: 0;
+}
+

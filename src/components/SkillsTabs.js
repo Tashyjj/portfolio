@@ -93,7 +93,7 @@ const SkillsTabs = () => {
         </button>
       </div>
 
-      <div className="tab-content">
+      <div className="tab-content" key={activeTab}>
         {renderContent()}
       </div>
     </div>
