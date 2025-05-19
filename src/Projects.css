@@ -6,21 +6,38 @@
 }
 
 .projects-section {
-  margin-top: 500px;
+  padding-top: 4rem;
   color: #ccd6f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 80vh;
   width: fit-content;
   margin: 0 auto;
 }
   
+
+
 .projects-title {
-  padding-left: 8vh;
-  padding-bottom: 5vh;
-  text-align: left;
-  font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #ccd6f6;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    gap: 1rem;
+}
+
+.projects-title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 200px;
+    background-color: #8892b05e;
+    margin-top: 0.5rem;
+    flex-grow: 1;
+    background-color: #8892b081;
+    margin-left: 1rem;
 }
 
 .project-list {
@@ -33,7 +50,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
   background-color: rgba(106, 255, 230, 0.05);
   width: 30%;
   padding: 0.7rem 1.7rem;

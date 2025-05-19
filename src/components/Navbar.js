@@ -4,6 +4,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <a href="#skills" className="nav-link">Skills</a>
+      <a href="#projects" className="nav-link">Projects</a>
+      <a href="#contact" className="nav-link">Contact</a>
     </nav>
   );
 };

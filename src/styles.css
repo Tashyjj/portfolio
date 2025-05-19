@@ -25,11 +25,26 @@ html {
 }
 
 .pageTitle {
+    display: flex;
+    align-items: center;
     text-align: left;
     color: #ccd6f6;
     font-family: 'Arial', sans-serif;
-    margin-bottom: 1rem;
-    font-size: 20px;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    gap: 1rem;
+}
+
+.pageTitle::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 200px;
+    background-color: #8892b05e;
+    margin-top: 0.5rem;
+    flex-grow: 1;
+    background-color: #8892b081;
+    margin-left: 1rem;
 }
 
 .pageContent {
@@ -75,6 +90,7 @@ text-align: left;
     padding: 2rem;
     color: #c3cff8;
     margin: 0 auto;
+    padding-top: 5rem;
 }
   
 .intro-text {
@@ -107,6 +123,12 @@ text-align: left;
     text-align: left;
 }
 
+.highlight-link {
+    color: #64ffda;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
 .learn-more-button {
     width: fit-content;
     padding: 0.8rem 2rem;
@@ -135,6 +157,7 @@ text-align: left;
     justify-content: flex-end;
     padding: 1rem 2rem;
     z-index: 1000;
+    gap: 1rem;
 }
 
 .nav-link {
@@ -150,7 +173,7 @@ text-align: left;
 }
 
 .skills-section {
-    margin-top: 500px;
+    padding-top: 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

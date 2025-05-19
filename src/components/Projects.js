@@ -55,7 +55,7 @@ const Projects = () => {
       image: '/assets/graph.png',
       title: 'Data Analysis - JavaScript',
       description:
-        'JavaScript implementations of data analysis tests',
+        'JavaScript implementations of data analysis tests. Includes Deviation, Correlation, and Regression tests.',
       tech: 'JavaScript',
       github: 'https://github.com/Tashyjj/Data-Analysis---JavaScript',
     },
