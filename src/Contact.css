@@ -107,3 +107,44 @@
     height: 3vh;
     width: 3vh
 }
+
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checkmark-image {
+    height: 60px;
+    width: 60px;
+}
+
+.contact-form,
+.confirmation-container {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    transition: opacity 0.3s ease;
+}
+
+.contact-form-wrapper {
+    min-height: 300px;
+    max-height: 300px;
+    position: relative;
+}
