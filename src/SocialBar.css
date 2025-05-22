@@ -1,0 +1,37 @@
+.social-bar {
+  position: fixed;
+  bottom: 0;
+  left: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+}
+
+.social-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-bar li {
+  margin: 1rem 0;
+}
+
+.social-bar img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%) brightness(80%);
+  transition: filter 0.3s ease;
+}
+
+.social-bar img:hover {
+  filter: none;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 170px;
+  background-color: #8892b0;
+  margin-top: 1rem;
+}
