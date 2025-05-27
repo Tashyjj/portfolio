@@ -21,19 +21,19 @@ const AboutMe = () => {
                 <h2>Programming Languages</h2>
                     <div className="languages">
                         <div className="language-item">
-                            <img src="/assets/pythonLogo.png" alt="Python" className="language-logo" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/pythonLogo.png`} alt="Python" className="language-logo" />
                             <span>Python</span>
                         </div>
                         <div className="language-item">
-                            <img src="/assets/javaScriptLogo.png" alt="JavaScript" className="language-logo" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/javaScriptLogo.png`} alt="JavaScript" className="language-logo" />
                             <span>JavaScript</span>
                         </div>
                         <div className="language-item">
-                            <img src="/assets/sqlLogo.png" alt="SQL" className="language-logo" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/sqlLogo.png`} alt="SQL" className="language-logo" />
                             <span>SQL</span>
                         </div>
                         <div className="language-item">
-                            <img src="/assets/htmlCssLogo.png" alt="HTML/CSS" className="language-logo" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/htmlCssLogo.png`} alt="HTML/CSS" className="language-logo" />
                             <span>HTML/CSS</span>
                         </div>
                     </div>

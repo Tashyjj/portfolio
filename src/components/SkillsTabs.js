@@ -26,7 +26,7 @@ const SkillsTabs = () => {
         return (
           <div className="skills-grid">
             {skillItem('/assets/pythonLogo.png', 'Python', ['Scripts & Automation', 'APIs', 'Data Analysis'])}
-            {skillItem('/assets/javascriptLogo.png', 'JavaScript', ['Data Analysis', 'DOM Manipulation', 'Asynchronous Code'])}
+            {skillItem('/assets/javaScriptLogo.png', 'JavaScript', ['Data Analysis', 'DOM Manipulation', 'Asynchronous Code'])}
             {skillItem('/assets/htmlCssLogo.png', 'HTML/CSS', ['Web Development', 'Semantic Layout', 'Responsive Design'])}
             {skillItem('/assets/sqlLogo.png', 'SQL', ['Joins & Queries', 'Data Retrieval', 'Data Manipulation'])}
           </div>

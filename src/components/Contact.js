@@ -47,12 +47,12 @@ return (
                 </div>
                 <textarea name="message" placeholder="Your Message" rows="5" required className="message-box" />
                 <button type="submit" className="submit-button">
-                    <img src="/assets/sendicon.png" alt="Send" className="submit-icon" />
+                    <img src={`${process.env.PUBLIC_URL}/assets/sendicon.png`} alt="Send" className="submit-icon" />
                 </button>
             </form>
         
             <div className={`confirmation-container ${messageSent ? 'visible' : 'hidden'}`}>
-                <img src="/assets/checkmark.png" alt="Sent!" className="checkmark-image" />
+                <img src={`${process.env.PUBLIC_URL}/assets/checkmark.png`} alt="Sent!" className="checkmark-image" />
                 <p className="confirmation-message">Your message has been sent.</p>
                 <button onClick={handleReset} className="submit-button">
                     Send Another Message
