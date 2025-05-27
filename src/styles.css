@@ -86,11 +86,13 @@ text-align: left;
     align-items: flex-start;
     justify-content: center;
     height: 80vh;
-    width: 35%;
-    padding: 2rem;
+    max-width: 900px;
+    padding: 2rem 2rem 2rem 15rem;
     color: #c3cff8;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 5rem;
+    text-align: left;
 }
   
 .intro-text {
