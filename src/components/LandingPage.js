@@ -18,7 +18,17 @@ const LandingPage = () => {
           Continual Energy Inc.
         </a>
       </p>
-      <a href="#skills" className="learn-more-button">See my skills</a>
+      <div className="button-container">
+        <a href="#skills" className="learn-more-button">See my skills</a>
+        <a
+          href="/resume.pdf"
+          className="resume-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          See my resume
+        </a>
+      </div>
       <div className="spacer"></div>
     </div>
   );

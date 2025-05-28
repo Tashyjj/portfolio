@@ -74,7 +74,7 @@ const Projects = () => {
       <h2 className="projects-title">What I've Worked On</h2>
       <div className="project-list">
         {projectData.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div className="project-card" title="Link to Website" key={index}>
 
 
           <a
@@ -93,6 +93,7 @@ const Projects = () => {
 
           <a
             href={project.github}
+            title="GitHub Repository"
             target="_blank"
             rel="noopener noreferrer"
             className="github-box"

@@ -61,7 +61,8 @@
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   height: 27vh;
-  width: 26vh;
+  width: 100%;
+  max-width: 250px;
 }
 
 .card-link-wrapper {
@@ -146,22 +147,24 @@
   font-size: 0.7rem;
   color: #64ffda;
   margin-top: 0rem;
-  word-break: normal;       /* allow breaks within words */
-  overflow-wrap: break-word;       /* ensures it breaks even long words */
+  word-break: break-word;
+  overflow-wrap: break-word;
   white-space: normal; 
+  width: 100%;
+  box-sizing: border-box;
 }
 
 
 
 @media (max-width: 1024px) {
   .project-list {
-    grid-template-columns: repeat(2, 1fr); /* medium screens: 2 cards */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .project-list {
-    grid-template-columns: 1fr; /* small screens: 1 card */
+    grid-template-columns: 1fr;
     justify-items: center;
   }
   .tech-used {

@@ -132,7 +132,13 @@ text-align: left;
     transition: color 0.3s ease;
 }
 
-.learn-more-button {
+.button-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.learn-more-button,
+.resume-button {
     width: fit-content;
     padding: 0.8rem 2rem;
     font-size: 1.1rem;
@@ -146,7 +152,8 @@ text-align: left;
     text-decoration: none;
 }
 
-.learn-more-button:hover {
+.learn-more-button:hover,
+.resume-button:hover {
     background-color: #64ffda;
     color: #0a192f;
 }
@@ -368,16 +375,21 @@ text-align: left;
 }
 
 .skill-details {
+    list-style: none;
+    padding-left: 0;
     display: none;
     position: absolute;
-    top:10px;
+    top: 1rem;
     left: 0px;
     top: 1rem;
     font-size: 0.8rem;
     color: #8892b0;
     margin-top: 0.5rem;
-    text-align: left;
-    list-style: disc;
+    text-align: center;
+    width: 100%;
+}
+.skill-details li {
+    margin-bottom: 0.5rem;
 }
 
 .skill-item:hover span {
@@ -385,8 +397,10 @@ text-align: left;
 }
 
 .skill-item:hover .skill-icon {
-    transform: translate(0, 0) scale(0.75);
+    transform: translate(0, 0) scale(0.5);
     transition: transform 0.3s ease;
+    top: 60%;
+    left: 60%
 }
 
 .skill-item:hover .skill-details {
