@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.02f83deb.css",
-    "main.js": "/static/js/main.cd237350.js",
+    "main.js": "/static/js/main.265281a5.js",
     "static/js/453.253ccfac.chunk.js": "/static/js/453.253ccfac.chunk.js",
     "static/media/FiraCode-Regular.ttf": "/static/media/FiraCode-Regular.56402a6df7b1f107e9c4.ttf",
     "static/media/Minimalist School.ttf": "/static/media/Minimalist School.101374bd80c27d61ec39.ttf",
     "index.html": "/index.html",
     "main.02f83deb.css.map": "/static/css/main.02f83deb.css.map",
-    "main.cd237350.js.map": "/static/js/main.cd237350.js.map",
+    "main.265281a5.js.map": "/static/js/main.265281a5.js.map",
     "453.253ccfac.chunk.js.map": "/static/js/453.253ccfac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02f83deb.css",
-    "static/js/main.cd237350.js"
+    "static/js/main.265281a5.js"
   ]
 }
